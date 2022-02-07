@@ -1,0 +1,22 @@
+.options_wedget{
+    background-color: $blue;
+    color: $off-white;
+    padding: $m-size;
+    display: flex;
+    justify-content: space-between;
+    h3{
+        margin: 0%;
+    }
+}
+
+.option_list{
+    background-color: $light-blue;
+    margin-bottom: $xl-size;
+}
+.options_massege{
+    color: $off-white;
+    margin: 0%;
+    padding: $l-size;
+    text-align: center;
+    border-bottom: 0.1rem solid lighten($color:$light-blue, $amount: 10%);
+}

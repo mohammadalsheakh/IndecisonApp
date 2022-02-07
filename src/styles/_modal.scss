@@ -1,0 +1,35 @@
+.ReactModalPortal > div{ //we use > to select a child 
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay{ // we dont need to put the value of the opacity here becouse it will not be shown as we need 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity ease-in-out 200ms;
+}
+.ReactModalPortal .ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+.ReactModalPortal .ReactModal__Overlay--before-close{ //this div will appear when we need to close the modal 
+    opacity: 0;
+}
+
+
+.modal{
+    background-color: $light-blue;
+    color: white;
+    max-width: 30rem;
+    outline: none;
+    padding: $l-size;
+    text-align: center;
+    h3{
+        margin: 0 0 $m-size 0;
+    }
+    p{
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 0 0 $l-size 0;
+        word-break: break-all;
+    }
+}

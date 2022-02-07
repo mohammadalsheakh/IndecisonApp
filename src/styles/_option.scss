@@ -1,0 +1,19 @@
+.option{
+    display: flex;
+    justify-content: space-between;
+    padding: $l-size  $m-size;
+    border-bottom: solid 0.1rem lighten($color:$light-blue , $amount: 10%);
+}
+
+.option_text{
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0%;
+}
+
+@media (max-width : 30rem){
+    .option_text{
+        font-size: 1.5rem;
+    }
+}

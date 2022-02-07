@@ -1,0 +1,40 @@
+.add-option_error{
+    color: $off-white;
+    font-style: italic;
+    padding: 0 $m-size;
+    margin: $m-size 0 0 0;
+
+}
+.add-option_form{
+    display: flex;
+    input{
+        flex-grow: 1; //this means that let this element take all the space available we have in the box 
+        background-color: $dark-blue;
+        border: none;
+        border-bottom:  solid 0.3rem darken($color:$dark-blue , $amount: 10%);
+        color: $off-white;
+        margin-right: $s-size;
+        padding-left: $s-size;
+    }
+    padding: $m-size;
+    
+}
+@media (max-width:45rem){
+    .add-option_form{
+        flex-direction: column;
+        input{
+            padding: 0;
+            padding-left: 10px;
+            height: 35px;
+            width: 100%;
+            margin: 0 0 $s-size 0;
+        }
+        button{
+            padding: 0 $s-size 0 $s-size;
+            height: 50px;
+            width: 100%;
+            margin: 0 0 $s-size 0;
+            font-size: $m-size;
+        }
+    }
+}
